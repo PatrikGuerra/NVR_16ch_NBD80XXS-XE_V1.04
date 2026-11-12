@@ -63,6 +63,8 @@ With the reported overhang and diagram-estimated VGA projection, the combined to
 
 ## Component heights
 
+Owner measurements including PCB thickness: dual USB 17.14 mm and VGA 14.2 mm, interpreted from PCB underside to connector top. Subtract the actual measured PCB thickness to obtain heights above the top surface. See [measured heights CSV](measured-component-heights.csv).
+
 [Photo-based component identification and manufacturer-reference height estimates](HEIGHTS.md) include uncertainty, unmated connector heights, and preliminary CAD reservations. Exact fitted part numbers are unconfirmed.
 
 ## Sources

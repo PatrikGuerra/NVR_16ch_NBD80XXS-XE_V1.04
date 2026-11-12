@@ -10,6 +10,19 @@ The repository [front photograph](images/frontBoard.jpg) and the [JFTech PDF pho
 
 ## Heights and preliminary CAD reservations
 
+### Physical measurements including PCB thickness
+
+The owner reported these measurements including board thickness, interpreted as PCB underside to connector top. They are not directly comparable with the Z=0 top-surface heights below. Instrument tolerance and PCB thickness have not yet been supplied.
+
+| Component | Measured underside-to-top height | Height above PCB top |
+|---|---:|---|
+| Dual USB J11 | 17.14 | 17.14 minus measured PCB thickness |
+| VGA J12/J17 | 14.2 | 14.2 minus measured PCB thickness |
+
+These physical measurements take precedence over comparison-part estimates once the datum is converted. Do not assume a standard PCB thickness to report a verified top-surface height. [Measured heights CSV](measured-component-heights.csv).
+
+### Reference estimates above PCB top
+
 "Reserve" is an intentionally rounded, preliminary top-of-component keepout measured from Z=0. It includes a small geometric allowance beyond the estimate; it is not a complete enclosure or thermal specification. For unknown optional parts it is only a placeholder. All figures exclude mating plugs and wire bends.
 
 | Component | Nominal reference / estimate | Plausible board height | Reserve to Z | Confidence and basis |

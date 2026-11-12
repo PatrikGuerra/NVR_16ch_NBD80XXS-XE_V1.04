@@ -1,0 +1,3 @@
+feature,measured_height_mm,datum,pcb_thickness_mm,height_above_PCB_top_mm,tolerance_mm
+Dual USB J11,17.14,PCB underside to connector top including PCB thickness,,,unspecified
+VGA J12/J17,14.2,PCB underside to connector top including PCB thickness,,,unspecified
