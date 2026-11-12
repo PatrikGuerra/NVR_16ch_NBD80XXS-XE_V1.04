@@ -5,6 +5,10 @@
 > **Status:** Work in progress — UART access confirmed, root shell pending  
 > **Last updated:** April 2026
 
+## Mechanical reference
+
+[Enclosure dimensions, mounting holes, heatsink, BT1 and approximate connector coordinates](MECHANICAL.md). Includes CSV tables and a top-view diagram; measured values and image estimates are labeled separately.
+
 # Images
 
 <table>
