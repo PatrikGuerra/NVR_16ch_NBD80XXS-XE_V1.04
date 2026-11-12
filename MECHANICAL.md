@@ -61,6 +61,10 @@ Practical uncertainty allowance: approximately +/-1 mm per connector boundary, o
 
 With the reported overhang and diagram-estimated VGA projection, the combined top-view envelope spans X=0 to 118 and Y approximately -6.3 to 47.6: about 118 x 53.9 mm before enclosure clearance. This is not a finished enclosure size. Heights of the external sockets and their openings cannot be derived reliably from this diagram. Physically verify panel cutouts and clearances before fabrication.
 
+## Component heights
+
+[Photo-based component identification and manufacturer-reference height estimates](HEIGHTS.md) include uncertainty, unmated connector heights, and preliminary CAD reservations. Exact fitted part numbers are unconfirmed.
+
 ## Sources
 
 - Owner's physical measurements and subsequent corrections, recorded above.
