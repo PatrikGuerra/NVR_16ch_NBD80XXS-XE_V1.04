@@ -1,0 +1,5 @@
+constraint,value_mm,datum_or_scope,source
+minimum_underside_clearance,2.9,PCB underside to enclosure floor,owner-reported minimum requirement
+PCB_thickness,1.6,PCB underside to top surface,owner measurement
+minimum_top_surface_to_floor_distance,4.5,PCB top surface to enclosure floor,derived 1.6 plus 2.9
+maximum_bolt_head_envelope_diameter,8,centered on each mounting hole; includes washers on same surface,owner-reported lateral limit
