@@ -20,6 +20,7 @@ Measurement tolerances and instrument accuracy were not supplied. Decimal places
 | PCB thickness | 1.6 |
 | Minimum clearance below PCB underside | 2.9, required for solder joints and underside components |
 | Maximum bolt-head envelope at mounting holes | Diameter 8, centered on each hole; larger heads may contact solder or components |
+| Maximum support/standoff diameter at mounting holes | Diameter 8, centered on each hole, for the same solder/component clearance constraint |
 | Left mounting hole | center (4.85, 19.10), diameter 4 |
 | Right mounting hole | center (105.85, 19.10), diameter 4 |
 | Hole center spacing | 101 |
@@ -41,6 +42,8 @@ The heatsink X value 28.46 is interpreted as its width, retaining the previously
 Owner-reported enclosure constraints: maintain **at least 2.9 mm below the PCB underside** for solder joints and underside components. With the PCB top surface at Z=0 and the measured 1.6 mm thickness, the underside is Z=-1.6 and a flat enclosure floor must be at Z=-4.5 or lower. The 2.9 mm is a minimum clearance requirement, not a measured maximum underside component height. Supports must contact suitable bare mounting areas rather than components.
 
 At each mounting-hole center, the available bolt-head envelope is **at most diameter 8 mm** (radius 4 mm). Do not exceed it with the head, washer, or mounting hardware sharing that surface. This is a lateral limit, not confirmation of permissible hardware height or clearance through the full Z range. An exactly 8 mm head has no lateral allowance at the reported limit. The hole centers remain (4.85,19.10) and (105.85,19.10), diameter 4 mm; the corresponding diameter-8 envelopes occupy X=0.85 to 8.85 and X=101.85 to 109.85, with Y=15.10 to 23.10.
+
+The owner also confirms a **maximum diameter of 8 mm for any support or standoff at either mounting hole**, for the same solder/component clearance reason. This includes the support's bearing face, collar, or other portion near the PCB. Center supports on the hole coordinates; a diameter exactly at the limit leaves no lateral fitting allowance. The diameter limit does not waive the minimum 2.9 mm underside clearance elsewhere or establish permitted support height.
 
 ## Approximate connector envelopes
 
