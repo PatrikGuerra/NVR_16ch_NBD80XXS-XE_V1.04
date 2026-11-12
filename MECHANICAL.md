@@ -17,6 +17,7 @@ Measurement tolerances and instrument accuracy were not supplied. Decimal places
 | Feature | Measurement |
 |---|---|
 | PCB outline | 118 x 46 |
+| PCB thickness | 1.6 |
 | Left mounting hole | center (4.85, 19.10), diameter 4 |
 | Right mounting hole | center (105.85, 19.10), diameter 4 |
 | Hole center spacing | 101 |
@@ -63,7 +64,7 @@ With the reported overhang and diagram-estimated VGA projection, the combined to
 
 ## Component heights
 
-Owner measurements including PCB thickness: dual USB 17.14 mm and VGA 14.2 mm, interpreted from PCB underside to connector top. Subtract the actual measured PCB thickness to obtain heights above the top surface. See [measured heights CSV](measured-component-heights.csv).
+PCB thickness is measured as 1.6 mm. Converted heights above PCB top are: USB 15.54, VGA 12.6, HDMI 6.5, Ethernet 13.02, DC input 11.05, audio 5.2, SATA data 8.2, and HDD power header 10.9 mm. All reported connector measurements included PCB thickness except SATA data, explicitly measured without it. See [measured heights CSV](measured-component-heights.csv). The earlier heatsink and BT1 height datums remain unconfirmed.
 
 [Photo-based component identification and manufacturer-reference height estimates](HEIGHTS.md) include uncertainty, unmated connector heights, and preliminary CAD reservations. Exact fitted part numbers are unconfirmed.
 

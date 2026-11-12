@@ -1,3 +1,9 @@
 feature,measured_height_mm,datum,pcb_thickness_mm,height_above_PCB_top_mm,tolerance_mm
-Dual USB J11,17.14,PCB underside to connector top including PCB thickness,,,unspecified
-VGA J12/J17,14.2,PCB underside to connector top including PCB thickness,,,unspecified
+Dual USB J11,17.14,PCB underside to connector top including PCB thickness,1.6,15.54,unspecified
+VGA J12/J17,14.2,PCB underside to connector top including PCB thickness,1.6,12.6,unspecified
+HDMI J16,8.1,PCB underside to connector top including PCB thickness,1.6,6.5,unspecified
+Ethernet J13/J14,14.62,PCB underside to connector top including PCB thickness,1.6,13.02,unspecified
+DC input JT1,12.65,PCB underside to connector top including PCB thickness,1.6,11.05,unspecified
+Audio J15,6.8,PCB underside to connector top including PCB thickness,1.6,5.2,unspecified
+SATA data CN3,8.2,PCB top surface to connector top excluding PCB thickness,1.6,8.2,unspecified
+HDD power J5,12.5,PCB underside to connector top including PCB thickness,1.6,10.9,unspecified

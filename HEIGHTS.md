@@ -10,16 +10,22 @@ The repository [front photograph](images/frontBoard.jpg) and the [JFTech PDF pho
 
 ## Heights and preliminary CAD reservations
 
-### Physical measurements including PCB thickness
+### Physical measurements and converted heights
 
-The owner reported these measurements including board thickness, interpreted as PCB underside to connector top. They are not directly comparable with the Z=0 top-surface heights below. Instrument tolerance and PCB thickness have not yet been supplied.
+The owner measured PCB thickness as **1.6 mm**. Connector measurements include PCB thickness (PCB underside to connector top), except SATA data CN3, explicitly measured without it. Above-PCB heights subtract 1.6 mm where applicable. Instrument tolerance was not supplied; calculated decimal places do not establish accuracy. "HDD 8.2" is interpreted as the SATA data connector, separately from the HDD power header.
 
-| Component | Measured underside-to-top height | Height above PCB top |
-|---|---:|---|
-| Dual USB J11 | 17.14 | 17.14 minus measured PCB thickness |
-| VGA J12/J17 | 14.2 | 14.2 minus measured PCB thickness |
+| Component | Reported height | Includes PCB? | Height above PCB top |
+|---|---:|---|---:|
+| Dual USB J11 | 17.14 | Yes | 15.54 |
+| VGA J12/J17 | 14.2 | Yes | 12.6 |
+| HDMI J16 | 8.1 | Yes | 6.5 |
+| Ethernet J13/J14 | 14.62 | Yes | 13.02 |
+| DC input JT1 | 12.65 | Yes | 11.05 |
+| Audio J15 | 6.8 | Yes | 5.2 |
+| SATA data CN3 | 8.2 | No | 8.2 |
+| HDD power J5 | 12.5 | Yes | 10.9 |
 
-These physical measurements take precedence over comparison-part estimates once the datum is converted. Do not assume a standard PCB thickness to report a verified top-surface height. [Measured heights CSV](measured-component-heights.csv).
+These physical measurements take precedence over the comparison-part estimates below. The earlier heatsink and BT1 height datums remain unconfirmed; this new PCB thickness is not automatically subtracted from them. [Measured heights CSV](measured-component-heights.csv).
 
 ### Reference estimates above PCB top
 
