@@ -12,5 +12,5 @@ Front panel J3/J4,6,5,9,10,low,I J
 USB header CN4,7,6,9,10,low,I
 Speaker J8,,,,10,unknown-unpopulated,placeholder
 433 J2,7,6,9,10,low,I J
-BT1,24.9,,,27,owner-reported,measured datum assumed
-Heatsink,22.4,,,25,owner-reported,conditional PCB-to-top datum
+BT1,24.9,,,27,owner-reported,measured PCB-top datum confirmed 2026-11-18
+Heatsink,22.4,,,25,owner-reported,measured PCB-top datum confirmed 2026-11-18

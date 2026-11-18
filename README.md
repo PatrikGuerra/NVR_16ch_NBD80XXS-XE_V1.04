@@ -7,6 +7,8 @@
 
 ## Mechanical reference
 
+[Download the STEP board reference model](NVR-board-reference.step) — 14 separate solids, verified in FreeCAD.
+
 [Enclosure dimensions, mounting holes, heatsink, BT1 and approximate connector coordinates](MECHANICAL.md). Includes CSV tables and a top-view diagram; measured values and image estimates are labeled separately. See also [component height estimates and comparison drawings](HEIGHTS.md).
 
 # Images

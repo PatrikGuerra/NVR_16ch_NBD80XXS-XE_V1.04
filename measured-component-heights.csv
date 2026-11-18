@@ -7,3 +7,5 @@ DC input JT1,12.65,PCB underside to connector top including PCB thickness,1.6,11
 Audio J15,6.8,PCB underside to connector top including PCB thickness,1.6,5.2,unspecified
 SATA data CN3,8.2,PCB top surface to connector top excluding PCB thickness,1.6,8.2,unspecified
 HDD power J5,12.5,PCB underside to connector top including PCB thickness,1.6,10.9,unspecified
+Heatsink,22.4,PCB top surface to component top excluding PCB thickness,1.6,22.4,unspecified
+BT1 holder,24.9,PCB top surface to component top excluding PCB thickness,1.6,24.9,unspecified

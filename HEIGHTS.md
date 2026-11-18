@@ -24,8 +24,10 @@ The owner measured PCB thickness as **1.6 mm**. Connector measurements include P
 | Audio J15 | 6.8 | Yes | 5.2 |
 | SATA data CN3 | 8.2 | No | 8.2 |
 | HDD power J5 | 12.5 | Yes | 10.9 |
+| Heatsink | 22.4 | No; PCB top datum confirmed | 22.4 |
+| BT1 holder | 24.9 | No; PCB top datum confirmed | 24.9 |
 
-These physical measurements take precedence over the comparison-part estimates below. The earlier heatsink and BT1 height datums remain unconfirmed; this new PCB thickness is not automatically subtracted from them. [Measured heights CSV](measured-component-heights.csv).
+These physical measurements take precedence over the comparison-part estimates below. On 2026-11-18 the owner confirmed that the heatsink and BT1 heights are measured above the PCB top surface; do not subtract PCB thickness from them. [Measured heights CSV](measured-component-heights.csv).
 
 ### Reference estimates above PCB top
 
@@ -47,7 +49,7 @@ These physical measurements take precedence over the comparison-part estimates b
 | Speaker J8 | unknown | unknown | 10 placeholder if fitted | Pads appear unpopulated in repository photo; a fitted header/cable could differ. |
 | 433 module J2 | 7 | 6-9 | 10 | Low: white five-position shrouded header; PH/XH family comparison [I,J], pitch unconfirmed. |
 | BT1 holder | 24.9 reported | tolerance unspecified | 27 preliminary | Owner measurement; retains previously reported dimensions. |
-| Heatsink | 22.4 reported | tolerance/datum unspecified | 25 only if PCB-to-top | Owner measurement. If 22.4 is heatsink body height alone, add the chip/adhesive/stand-off elevation before using it as installed Z. |
+| Heatsink | 22.4 reported | tolerance unspecified | 25 preliminary | Owner confirmed installed height above PCB top on 2026-11-18. |
 
 The white-header comparisons deliberately distinguish bare headers from mated assemblies: JST XH bare top-entry headers are about 7 mm high, while the mated system is about 9.8 mm; PH bare top-entry headers are about 6 mm, while the mated system is about 8 mm. A wire leaving vertically needs additional bend space. A SATA cable and its strain relief can exceed the bare 11 mm reservation substantially.
 
@@ -55,7 +57,7 @@ The white-header comparisons deliberately distinguish bare headers from mated as
 
 - The photograph also shows low-profile ICs, a tilted metal-can crystal, inductors, and an electrolytic capacitor near the power jack. Their exact packages and heights have not been identified reliably. No individual numerical heights are claimed for them.
 - The front-panel and RF headers in the photograph are identified by family only. Do not order mating plugs using these comparison part names without measuring pitch and keying.
-- The measured BT1 envelope currently controls the reported height at 24.9 mm. A ceiling at Z=27 mm would leave 2.1 mm over that holder **if the datum is correct**, but this is not proof that the whole populated board, mated cables or heatsink assembly fits. Cooling and ventilation need a separate allowance.
+- The measured BT1 envelope currently controls the reported height at 24.9 mm above PCB top. A ceiling at Z=27 mm would leave 2.1 mm over that holder, but this is not proof that the whole populated board or mated cables fit. Cooling and ventilation need a separate allowance.
 - PCB thickness is measured as 1.6 mm. The owner requires at least 2.9 mm clearance below the PCB underside for solder and components: with PCB top at Z=0, a flat floor must be at Z=-4.5 or lower. Enclosure walls, top clearance and cable routing require additional space. Mounting bolt heads, washers, supports and standoffs must stay within diameter 8 mm around each mounting hole; see [mounting constraints](MECHANICAL.md#underside-and-mounting-clearance).
 - Retain the X/Y image estimates already recorded; a reference manufacturer's different footprint should not silently replace the board-derived geometry.
 

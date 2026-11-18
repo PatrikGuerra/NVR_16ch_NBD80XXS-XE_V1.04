@@ -8,7 +8,7 @@ This supplement records an owner's physical measurements and approximate connect
 
 ## Coordinate system
 
-Top/component view. The front is the long edge carrying the external audio, VGA, HDMI, Ethernet, USB and DC sockets, in that left-to-right order in the reference diagram. Origin (0,0) is the front-left PCB corner; +X runs right, +Y runs inward toward the opposite edge. Negative Y denotes projection beyond the front edge. Heights are recorded as above the component-side PCB surface; the height datum was not independently checked.
+Top/component view. The front is the long edge carrying the external audio, VGA, HDMI, Ethernet, USB and DC sockets, in that left-to-right order in the reference diagram. Origin (0,0) is the front-left PCB corner; +X runs right, +Y runs inward toward the opposite edge. Negative Y denotes projection beyond the front edge. Heights are recorded as above the component-side PCB surface; the owner confirmed the heatsink and BT1 top-surface height datum on 2026-11-18.
 
 ## Owner-reported physical measurements
 
@@ -33,7 +33,7 @@ Measurement tolerances and instrument accuracy were not supplied. Decimal places
 | BT1 bounds | X=0.29 to 6.79; Y=24 to 47.6 |
 | BT1 height | 24.9 |
 
-The heatsink X value 28.46 is interpreted as its width, retaining the previously reported 24 mm left offset. Both measured component envelopes extend 1.6 mm beyond the opposite PCB edge (Y=46). These overhangs are retained as reported, rather than adjusted to match the published photo. PCB thickness, underside protrusions, installed heatsink elevation and plug/cable clearances remain to be measured.
+The heatsink X value 28.46 is interpreted as its width, retaining the previously reported 24 mm left offset. Both measured component envelopes extend 1.6 mm beyond the opposite PCB edge (Y=46). These overhangs are retained as reported, rather than adjusted to match the published photo. PCB thickness is measured as 1.6 mm, and minimum underside clearance is specified as 2.9 mm. Plug/cable clearances and individual underside protrusions remain unmeasured.
 
 [Measured component bounds CSV](measured-components.csv)
 
@@ -75,9 +75,17 @@ With the reported overhang and diagram-estimated VGA projection, the combined to
 
 ## Component heights
 
-PCB thickness is measured as 1.6 mm. Converted heights above PCB top are: USB 15.54, VGA 12.6, HDMI 6.5, Ethernet 13.02, DC input 11.05, audio 5.2, SATA data 8.2, and HDD power header 10.9 mm. All reported connector measurements included PCB thickness except SATA data, explicitly measured without it. See [measured heights CSV](measured-component-heights.csv). The earlier heatsink and BT1 height datums remain unconfirmed.
+PCB thickness is measured as 1.6 mm. Converted heights above PCB top are: USB 15.54, VGA 12.6, HDMI 6.5, Ethernet 13.02, DC input 11.05, audio 5.2, SATA data 8.2, and HDD power header 10.9 mm. All reported connector measurements included PCB thickness except SATA data, explicitly measured without it. See [measured heights CSV](measured-component-heights.csv). Heatsink 22.4 mm and BT1 24.9 mm are confirmed above the PCB top surface.
 
 [Photo-based component identification and manufacturer-reference height estimates](HEIGHTS.md) include uncertainty, unmated connector heights, and preliminary CAD reservations. Exact fitted part numbers are unconfirmed.
+
+## STEP enclosure reference model
+
+[Download the STEP model](NVR-board-reference.step). Created 2026-11-18 as 14 separate named solids: PCB with two through-holes, eight measured-height connector envelopes, three estimated-height header envelopes, heatsink and BT1. Coordinates use PCB top at Z=0 and underside at Z=-1.6. No enclosure, hardware, cable geometry, or clearance volumes are included.
+
+Body names ending XY_EST have image-estimated planar bounds; XYZ_EST additionally indicates estimated height. Connector blocks use the CSV minimum/maximum bounds, rather than reconstructing bounds from independently rounded centers and widths. Fan CN2 and speaker J8 are omitted as unpopulated in the reference photo. This is a simplified enclosure-planning model, not exact connector geometry or a finished panel-cutout template.
+
+Verified by reopening the exported STEP in installed FreeCAD 1.1: 14 valid closed solids, component bounds and volumes matched, PCB volume 8644.587614 mm3, both cylindrical holes diameter 4 mm at the specified centers. Overall bounds X=0..118, Y=-6.3..47.6, Z=-1.6..24.9 mm. Each solid label survived STEP reimport. No native CAD project or STL is supplied.
 
 ## Sources
 
