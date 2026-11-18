@@ -9,6 +9,10 @@
 
 [Download the STEP board reference model](NVR-board-reference.step) — 14 separate solids, verified in FreeCAD.
 
+![Angled view of the simplified STEP board reference model](images/NVR-board-reference.png)
+
+The model uses simplified component envelopes. Connector X/Y positions remain approximate; see the measurement notes before designing final panel cutouts.
+
 [Enclosure dimensions, mounting holes, heatsink, BT1 and approximate connector coordinates](MECHANICAL.md). Includes CSV tables and a top-view diagram; measured values and image estimates are labeled separately. See also [component height estimates and comparison drawings](HEIGHTS.md).
 
 # Images

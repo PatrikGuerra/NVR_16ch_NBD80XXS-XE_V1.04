@@ -81,6 +81,8 @@ PCB thickness is measured as 1.6 mm. Converted heights above PCB top are: USB 15
 
 ## STEP enclosure reference model
 
+![Angled view of the simplified STEP reference model](images/NVR-board-reference.png)
+
 [Download the STEP model](NVR-board-reference.step). Created 2026-11-18 as 14 separate named solids: PCB with two through-holes, eight measured-height connector envelopes, three estimated-height header envelopes, heatsink and BT1. Coordinates use PCB top at Z=0 and underside at Z=-1.6. No enclosure, hardware, cable geometry, or clearance volumes are included.
 
 Body names ending XY_EST have image-estimated planar bounds; XYZ_EST additionally indicates estimated height. Connector blocks use the CSV minimum/maximum bounds, rather than reconstructing bounds from independently rounded centers and widths. Fan CN2 and speaker J8 are omitted as unpopulated in the reference photo. This is a simplified enclosure-planning model, not exact connector geometry or a finished panel-cutout template.
